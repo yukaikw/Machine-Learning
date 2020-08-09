@@ -6,6 +6,7 @@
 * Data 含有 18 項觀測數據 AMB_TEMP, CH4, CO, NHMC, NO, NO2, NOx, O3, PM10, PM2.5, RAINFALL, RH, SO2, THC, WD_HR, WIND_DIREC, WIND_SPEED, WS_HR
 ## Implementation
 實作linear regression的步驟:
+
 <img src="graphic/step1.png" width=800 height=550 /> 
 <img src="graphic/step2.png" width=800 height=550 /> 
 <img src="graphic/step3.png" width=800 height=550 /> 
