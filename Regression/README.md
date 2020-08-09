@@ -16,7 +16,7 @@ Model Selection: <br>
 
 Optimizer Selection: <br>
 Feature Selection: <br>
-Regularization:
+Regularization: <br>
 <img src="graphic/regularization.png" width=800 height=550 /> 
 
 Reference: 
