@@ -6,9 +6,16 @@
 * Data 含有 18 項觀測數據 AMB_TEMP, CH4, CO, NHMC, NO, NO2, NOx, O3, PM10, PM2.5, RAINFALL, RH, SO2, THC, WD_HR, WIND_DIREC, WIND_SPEED, WS_HR
 ## Implementation
 實作linear regression的步驟:
-![](graphic/step1.png)
-![](graphic/step2.png)
-![](graphic/step3.png)
+<img src="graphic/step1.png" width=800 height=550 /> 
+<img src="graphic/step2.png" width=800 height=550 /> 
+<img src="graphic/step3.png" width=800 height=550 /> 
+
+Model Selection:
+在進行model的選擇時, 我嘗試過以下三種model:
+Optimizer Selection:
+Feature Selection:
+Regularization:
+![](graphic/regularization.png)
 
 Reference: 
 [課程投影片](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Regression.pdf)
