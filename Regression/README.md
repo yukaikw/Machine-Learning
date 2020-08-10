@@ -17,7 +17,7 @@
 
 ### Optimizer Selection: <br>
 ### Feature Selection: <br>
-在進行feauture的選擇時, 我考慮了資料的分佈性, 對每項feature計算其標準差, 如果標準差太小則代表此項feature的變化性很小, 則對於預測PM2.5的幫助不大, 因此將這些資料的值設為0, 不予考慮
+在進行feauture的選擇時, 我考慮了資料的分佈性, 對每項feature計算其標準差, 如果標準差太小則代表此項feature的變化性很小, 則對於預測PM2.5的幫助不大, 因此將這些資料的值設為0, 不予考慮, 其餘則保留
 
 
 Reference: 
