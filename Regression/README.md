@@ -12,11 +12,12 @@
 
 ### Model Selection: <br>
 在進行model的選擇時, 我嘗試過以下三種model:  <br>
-<img src="graphic/model.png" width=400 height=240 /> 
+<img src="graphic/model.png" width=400 height=240 /> <br>
 經過測試後發現加入二次項的結果最佳, 加入三次項會有overfit的情形, 因此最終選擇加入二次項進行training
 
 ### Optimizer Selection: <br>
 ### Feature Selection: <br>
+在進行feauture的選擇時, 我考慮了資料的分佈性, 對每項feature計算其標準差, 如果標準差太小則代表此項feature的變化性很小, 則對於預測PM2.5的幫助不大, 因此將其設為0, 不予考慮
 ### Regularization: <br>
 <img src="graphic/regularization.png" width=800 height=480 /> 
 
