@@ -13,6 +13,7 @@
 ### Model Selection: <br>
 在進行model的選擇時, 我嘗試過以下三種model:  <br>
 <img src="graphic/model.png" width=400 height=240 /> 
+經過測試後發現加入二次項的結果最佳, 加入三次項會有overfit的情形, 因此最終選擇加入二次項進行training
 
 ### Optimizer Selection: <br>
 ### Feature Selection: <br>
