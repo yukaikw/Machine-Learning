@@ -13,11 +13,12 @@
 
 Model Selection: <br>
 在進行model的選擇時, 我嘗試過以下三種model:  <br>
+<img src="graphic/model.png" width=400 height=240 /> 
 
 Optimizer Selection: <br>
 Feature Selection: <br>
 Regularization: <br>
-<img src="graphic/regularization.png" width=800 height=550 /> 
+<img src="graphic/regularization.png" width=800 height=480 /> 
 
 Reference: 
 [課程投影片](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Regression.pdf)
