@@ -18,8 +18,7 @@
 ### Optimizer Selection: <br>
 ### Feature Selection: <br>
 在進行feauture的選擇時, 我考慮了資料的分佈性, 對每項feature計算其標準差, 如果標準差太小則代表此項feature的變化性很小, 則對於預測PM2.5的幫助不大, 因此將這些資料的值設為0, 不予考慮
-### Regularization: <br>
-<img src="graphic/regularization.png" width=800 height=480 /> 
+
 
 Reference: 
 [課程投影片](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Regression.pdf)
