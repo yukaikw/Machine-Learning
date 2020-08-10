@@ -5,19 +5,18 @@
   * test.csv : 從剩下的資料當中取樣出連續的 10 小時為一筆，前九小時的所有觀測數據當作 feature，第十小時的 PM2.5 當作 answer，一共取出 240 筆不重複的 test data，請根據 feature 預測這 240 筆的 PM2.5
 * Data 含有 18 項觀測數據 AMB_TEMP, CH4, CO, NHMC, NO, NO2, NOx, O3, PM10, PM2.5, RAINFALL, RH, SO2, THC, WD_HR, WIND_DIREC, WIND_SPEED, WS_HR
 ## Implementation
-實作linear regression的步驟:
-
+### 實作linear regression的步驟:
 <img src="graphic/step1.png" width=800 height=550 /> 
 <img src="graphic/step2.png" width=800 height=550 /> 
 <img src="graphic/step3.png" width=800 height=550 /> 
 
-Model Selection: <br>
+### Model Selection: <br>
 在進行model的選擇時, 我嘗試過以下三種model:  <br>
 <img src="graphic/model.png" width=400 height=240 /> 
 
-Optimizer Selection: <br>
-Feature Selection: <br>
-Regularization: <br>
+### Optimizer Selection: <br>
+### Feature Selection: <br>
+### Regularization: <br>
 <img src="graphic/regularization.png" width=800 height=480 /> 
 
 Reference: 
