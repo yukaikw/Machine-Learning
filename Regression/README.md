@@ -11,15 +11,16 @@
 <img src="images/step3.png" width=800 height=550 /> 
 
 ### Model Selection: <br>
-在進行model的選擇時, 我嘗試過以下三種model:  <br>
+在進行model的選擇時，我嘗試過以下三種model:  <br>
 <img src="images/model.png" width=400 height=240 /> <br>
-經過測試後發現加入二次項的結果最佳, 加入三次項會有overfit的情形, 因此最終選擇加入二次項進行training
+經過測試後發現加入二次項的結果最佳，加入三次項會有overfit的情形，因此最終選擇加入二次項進行training
 
 ### Optimizer Selection: <br>
 ### Feature Selection: <br>
-在進行feauture的選擇時, 我考慮了資料的分佈性, 對每項feature計算其標準差, 如果標準差太小則代表此項feature的變化性很小, 則對於預測PM2.5的幫助不大, 因此將這些資料的值設為0, 不予考慮, 其餘則保留
+在進行feauture的選擇時，我考慮了資料的分佈性，對每項feature計算其標準差，如果標準差太小則代表此項feature的變化性很小，則對於預測PM2.5的幫助不大，因此將這些資料的值設為0，不予考慮，其餘則保留
 
 
 Reference: 投影片部份取自李宏毅教授的機器學習課程 (
 [課程投影片](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Regression.pdf)
-[作業說明投影片](https://docs.google.com/presentation/d/18MG1wSTTx8AentGnMfIRUp8ipo8bLpgAj16bJoqW-b0/edit#slide=id.g4cd6560e29_0_15) )
+[作業說明投影片](https://docs.google.com/presentation/d/18MG1wSTTx8AentGnMfIRUp8ipo8bLpgAj16bJoqW-b0/edit#slide=id.g4cd6560e29_0_15)
+[kaggle連結](https://www.kaggle.com/c/ml2020spring-hw1) )
