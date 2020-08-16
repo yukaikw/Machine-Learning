@@ -6,3 +6,6 @@
   * continuous features in train.csv => remain the same in X_train (age, capital losses...).
   * X_train, X_test : each row contains one 510-dim feature represents a sample.
   * Y_train: label = 0 means  “<= 50K” 、 label = 1 means  “ >50K ”
+## Implementation
+### Logistic Regression
+### Porbabilistic Generative Model
