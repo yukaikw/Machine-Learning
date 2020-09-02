@@ -13,7 +13,7 @@
 ### Feature Engineering: <br>
 * 加入feature normalization後準確率有很大的提升，應用此技巧可以改善資料範圍不同的問題，以這次問題的training data為例，
 有許多資料的值為0或1，但像age這類連續性資料，範圍有可能是0-100，但並不代表age對classification佔有很大的比重
-* 在510維的feature之後加上二次、三次項總共1530維
+* 在510維的feature之後加上二次項和三次項，總共1530維，再進行training
 ### Optimizer Selection: <br>
 網路上應該可以找到很多關於Adam的討論，他的強項在於快、而收斂效果則常常不是最好。因為這個task很簡單，因此任何算法都可以很快收斂，adam效果自然不好
 ### Regularization: <br>
@@ -25,6 +25,10 @@
 ### 實作步驟: <br>
 <img src="images/generative.png" width=800 height=550 /> 
 <img src="images/probability.png" width=800 height=550 /> 
+
+---
+### Comparison
+比較generative model和logistic regression在development set和testing data上的準確率後，發現都是logistic regression的準確率較佳，generative model與logistic regression不同的地方在於generative model會對資料之間的機率分布做假設，而當資料少的時候，或許generative model能夠有比較好的結果，但當training data夠多的時候，generative model的這些假設就不見得是正確的，因此造成logistic regression有較佳的準確率
 
 ---
 ### Reference:
