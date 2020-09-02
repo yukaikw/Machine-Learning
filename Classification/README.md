@@ -15,6 +15,12 @@
 有許多資料的值為0或1，但像age這類連續性資料，範圍有可能是0-100，但並不代表age對classification佔有很大的比重
 * 在510維的feature之後加上二次項和三次項，總共1530維，再進行training
 ### Optimizer Selection: <br>
+Optimizer | 特色
+----------|------
+SGD       |
+Adagrad   |
+Adam      |
+
 網路上應該可以找到很多關於Adam的討論，他的強項在於快、而收斂效果則常常不是最好。因為這個task很簡單，因此任何算法都可以很快收斂，adam效果自然不好
 ### Regularization: <br>
 <img src="images/regularization.png" width=800 height=450 /> <br>
