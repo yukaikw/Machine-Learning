@@ -11,6 +11,9 @@
 ### 實作步驟: <br>
 <img src="images/logistic.png" width=800 height=600 /> <br>
 ### Feature Engineering: <br>
+* 加入feature normalization後準確率有很大的提升，應用此技巧可以改善資料範圍不同的問題，以這次問題的training data為例，
+有許多資料的值為0或1，但像age這類連續性資料，範圍有可能是0-100，但並不代表age對classification佔有很大的比重
+* 在510維的feature之後加上二次、三次項總共1530維
 ### Optimizer Selection: <br>
 網路上應該可以找到很多關於Adam的討論，他的強項在於快、而收斂效果則常常不是最好。因為這個task很簡單，因此任何算法都可以很快收斂，adam效果自然不好
 ### Regularization: <br>
