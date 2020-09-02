@@ -20,8 +20,8 @@
 ---
 ### Porbabilistic Generative Model
 ### 實作步驟: <br>
-<img src="images/generative.png" width=800 height=600 /> 
-<img src="images/probability.png" width=800 height=600 /> 
+<img src="images/generative.png" width=800 height=550 /> 
+<img src="images/probability.png" width=800 height=550 /> 
 
 ---
 ### Reference:
