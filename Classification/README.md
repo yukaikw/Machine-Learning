@@ -8,7 +8,10 @@
   * Y_train: label = 0 代表  “<= 50K” 、 label = 1 代表  “ >50K ”
 ## Implementation
 ### Logistic Regression
+Optimizer Selection: <br>
 Regularization: <br>
 <img src="images/regularization.png" width=800 height=450 /> 
+
+在加入regularization後，經過測試發現會比沒加入regularization來得更差，原因是regularization的用意是在防止分類器太貼合training data，也就是說分類的切面太崎嶇，但這次的線性分類器不會有這個問題，所以基本上不需要做regularization
 
 ### Porbabilistic Generative Model
