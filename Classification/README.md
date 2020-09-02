@@ -8,4 +8,7 @@
   * Y_train: label = 0 代表  “<= 50K” 、 label = 1 代表  “ >50K ”
 ## Implementation
 ### Logistic Regression
+Regularization: <br>
+<img src="images/regularization.png" width=800 height=450 /> 
+
 ### Porbabilistic Generative Model
