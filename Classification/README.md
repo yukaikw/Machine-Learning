@@ -20,3 +20,9 @@
 ### 實作步驟: <br>
 <img src="images/generative.png" width=800 height=600 /> 
 <img src="images/probability.png" width=800 height=600 /> 
+
+Reference: 投影片部份取自李宏毅教授的機器學習課程 (
+[課程投影片(Logistic Regression)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2016/Lecture/Logistic%20Regression%20(v3).pdf)
+[課程投影片(Classification)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2016/Lecture/Classification%20(v3).pdf)
+[作業說明投影片](https://docs.google.com/presentation/d/1dQVeHfIfUUWxMSg58frKBBeg2OD4N7SD0YP3LYMM7AA/edit#slide=id.g7e958d1737_0_44)
+[kaggle連結](https://www.kaggle.com/c/ml2020spring-hw2) )
