@@ -23,7 +23,7 @@ Adagrad: <br>
 在進行feauture的選擇時，我考慮了資料的分佈性，對每項feature計算其標準差，如果標準差太小則代表此項feature的變化性很小，則對於預測PM2.5的幫助不大，因此將這些資料的值設為0，不予考慮，其餘則保留
 
 ---
-### Reference: 
+### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
 [課程投影片](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Regression.pdf)
 [作業說明投影片](https://docs.google.com/presentation/d/18MG1wSTTx8AentGnMfIRUp8ipo8bLpgAj16bJoqW-b0/edit#slide=id.g4cd6560e29_0_15)
