@@ -22,7 +22,7 @@ SGDM      | momentum能夠在相關方向加速SGD，從而加快收斂 <br> 收
 Adagrad   | 會自動調整learning rate <br> 適合處理稀疏梯度 <br> 分母梯度的累加會越來越大，導致梯度最終趨近0，使得training結束
 Adam      | 結合SGDM和Adagrad的優點 <br> training的速度快 <br> 目前普遍最常使用的optimizer
 
-Adam的強項在於速度快，但收斂效果則常常不是最好，由於這次的task很簡單，因此任何算法都可以很快收斂，Adam的效果就不是很好，所以最終選擇Adagrad作為optimizer
+Adam的強項在於速度快，但收斂效果則常常不是最好，由於這次的task很簡單，因此任何算法都可以很快收斂，所以使用Adam的效果就不是很好，同時考慮到效能和收斂結果兩者因素，最終選擇Adagrad作為optimizer
 
 ### Regularization: <br>
 <img src="images/regularization.png" width=800 height=450 /> <br>
