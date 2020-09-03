@@ -6,6 +6,9 @@
   * 連續性資料: 例如年齡、資本損失...
   * X_train, X_test : 每一列包含一個510維的資料作為一個樣本
   * Y_train: label = 0 代表  “<= 50K” 、 label = 1 代表  “ >50K ”
+## Download Dataset
+<img src="images/dataset.png" width=700 height=60 /> <br>
+
 ## Implementation
 ### Logistic Regression
 ### 實作步驟: <br>
