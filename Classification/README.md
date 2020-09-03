@@ -15,13 +15,15 @@
 有許多資料的值為0或1，但像age這類連續性資料，範圍有可能是0-100，但並不代表age對classification佔有很大的比重
 * 在510維的feature之後加上二次項和三次項，總共1530維，再進行training
 ### Optimizer Selection: <br>
-Optimizer | 特色
+Optimizer | 特點
 ----------|------
-SGD       |
-Adagrad   |
-Adam      |
+SGD       | 對所有的參數更新使用相同的learning rate <br> 容易收斂到局部最小值，並且容易被困在鞍點 <br> 需要較長時間收斂至最小值 
+SGDM      | momentum能夠在相關方向加速SGD，從而加快收斂 <br> 收斂的時間比起Adagrad和Adam來得長，但通常結果較為可靠
+Adagrad   | 會自動調整learning rate <br> 適合處理稀疏梯度 <br> 分母梯度的累加會越來越大，導致梯度最終趨近0，使得training結束
+Adam      | 結合SGDM和Adagrad的優點 <br> training的速度快 <br> 目前普遍最常使用的optimizer
 
-網路上應該可以找到很多關於Adam的討論，他的強項在於快、而收斂效果則常常不是最好。因為這個task很簡單，因此任何算法都可以很快收斂，adam效果自然不好
+Adam的強項在於速度快，但收斂效果則常常不是最好，由於這次的task很簡單，因此任何算法都可以很快收斂，Adam的效果就不是很好，所以最終選擇Adagrad作為optimizer
+
 ### Regularization: <br>
 <img src="images/regularization.png" width=800 height=450 /> <br>
 在加入regularization後，經過測試發現會比沒加入regularization來得更差，原因是regularization的用意是在防止分類器太貼合training data，也就是說分類的切面太崎嶇，但這次的線性分類器不會有這個問題，所以基本上不需要做regularization
