@@ -9,7 +9,10 @@
 ## Download Dataset
 <img src="images/dataset.png" width=700 height=60 /> <br>
 ## Implementation
-
+### Model Selection
+### Optimizer Selection
+### Data Augmentation
+### Confusion Matrix
 ---
 ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
