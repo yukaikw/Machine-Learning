@@ -129,7 +129,7 @@ class Classifier(nn.Module):
         out = out.view(out.size()[0], -1)
         return self.fc(out)
 
-batch_size = 32
+batch_size = 64
 test_set = ImgDataset(test_x, transform=test_transform)
 test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
 
@@ -144,7 +144,7 @@ with torch.no_grad():
             prediction.append(y)
 
 #將結果寫入 csv 檔
-with open("./predict.csv", 'w') as f:
+with open("./result/predict.csv", 'w') as f:
     f.write('Id,Category\n')
     for i, y in  enumerate(prediction):
         f.write('{},{}\n'.format(i, y))

@@ -12,11 +12,11 @@ import time
 def readfile(path, label):
     # label 是一個 boolean variable，代表需不需要回傳 y 值
     image_dir = sorted(os.listdir(path))
-    x = np.zeros((len(image_dir), 128, 128, 3), dtype=np.uint8)
+    x = np.zeros((len(image_dir), 142, 142, 3), dtype=np.uint8)
     y = np.zeros((len(image_dir)), dtype=np.uint8)
     for i, file in enumerate(image_dir):
         img = cv2.imread(os.path.join(path, file))
-        x[i, :, :] = cv2.resize(img,(128, 128))
+        x[i, :, :] = cv2.resize(img,(142, 142))
         if label:
           y[i] = int(file.split("_")[0])
     if label:
@@ -39,8 +39,9 @@ train_transform = transforms.Compose([
     transforms.ToPILImage(),
     transforms.RandomHorizontalFlip(), # 隨機將圖片水平翻轉
     transforms.RandomRotation(15), # 隨機旋轉圖片
-    transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5),
+    transforms.ColorJitter(brightness=0.15, contrast=0.15, saturation=0.15),
     transforms.RandomPerspective(),
+    transforms.RandomCrop(128),
     transforms.RandomAffine(15),
     transforms.ToTensor(), # 將圖片轉成 Tensor，並把數值 normalize 到 [0,1] (data normalization)
 ])
@@ -146,7 +147,7 @@ class Classifier(nn.Module):
         out = out.view(out.size()[0], -1)
         return self.fc(out)
 
-batch_size = 32
+batch_size = 64
 train_val_x = np.concatenate((train_x, val_x), axis=0)
 train_val_y = np.concatenate((train_y, val_y), axis=0)
 train_val_set = ImgDataset(train_val_x, train_val_y, train_transform, 1)
@@ -155,7 +156,7 @@ train_val_loader = DataLoader(train_val_set, batch_size=batch_size, shuffle=True
 model = Classifier().cuda()
 loss = nn.CrossEntropyLoss() # 因為是 classification task，所以 loss 使用 CrossEntropyLoss
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0005) # optimizer 使用 Adam
-num_epoch = 250
+num_epoch = 200
 
 for epoch in range(num_epoch):
     epoch_start_time = time.time()
