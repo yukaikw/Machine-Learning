@@ -52,23 +52,21 @@ test_transform = transforms.Compose([
 ])
 
 class ImgDataset(Dataset):
-    def __init__(self, x, y=None, transform=None, size=1):
+    def __init__(self, x, y=None, transform=None):
         self.x = x
         # label is required to be a LongTensor
         self.y = y
         if y is not None:
             self.y = torch.LongTensor(y)
         self.transform = transform
-        self.size = size
     def __len__(self):
-        return len(self.x)*self.size
-    def __getitem__(self, index): 
-        index %= len(self.x)
+        return len(self.x)
+    def __getitem__(self, index):
         X = self.x[index]
         if self.transform is not None:
             X = self.transform(X)
         if self.y is not None:
-            Y = self.y[index]           
+            Y = self.y[index]
             return X, Y
         else:
             return X
@@ -150,7 +148,7 @@ class Classifier(nn.Module):
 batch_size = 64
 train_val_x = np.concatenate((train_x, val_x), axis=0)
 train_val_y = np.concatenate((train_y, val_y), axis=0)
-train_val_set = ImgDataset(train_val_x, train_val_y, train_transform, 1)
+train_val_set = ImgDataset(train_val_x, train_val_y, train_transform)
 train_val_loader = DataLoader(train_val_set, batch_size=batch_size, shuffle=True)
 
 model = Classifier().cuda()
