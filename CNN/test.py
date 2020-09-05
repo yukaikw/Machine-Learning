@@ -131,12 +131,12 @@ batch_size = 64
 test_set = ImgDataset(test_x, transform=test_transform)
 test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
 
-model_best = torch.load("vgg16.model")
-model_best.eval()
+model = torch.load("vgg16.model")
+model.eval()
 prediction = []
 with torch.no_grad():
     for i, data in enumerate(test_loader):
-        test_pred = model_best(data.cuda())
+        test_pred = model(data.cuda())
         test_label = np.argmax(test_pred.cpu().data.numpy(), axis=1)
         for y in test_label:
             prediction.append(y)
