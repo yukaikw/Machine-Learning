@@ -6,7 +6,7 @@
   * Validation set: 3430張
   * Testing set: 3347張
 * 利用資料集來訓練出一個CNN model，以此預測出每張圖片的食物種類
-
+<img src="images/testingdata.png" width=900 height=200 /> <br>
 ## Download Dataset
 <img src="images/dataset.png" width=700 height=60 /> <br>
 ## Implementation
