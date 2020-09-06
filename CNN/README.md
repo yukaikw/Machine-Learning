@@ -13,6 +13,7 @@
 ### Model Selection
 在CNN模型的架構上，我選擇的是VGG16，如下圖所示:
 <img src="images/vgg16.png" width=800 height=300 /> <br>
+其中包括13層Convolution Layer，5層MaxPooling，3層Fully-Connected Layer
 ### Optimizer Selection
 ### Data Augmentation
 ### Confusion Matrix
