@@ -10,6 +10,7 @@
 <img src="images/dataset.png" width=700 height=60 /> <br>
 ## Implementation
 ### Model Selection
+<img src="images/vgg16.png" width=800 height=300 /> <br>
 ### Optimizer Selection
 ### Data Augmentation
 ### Confusion Matrix
