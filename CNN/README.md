@@ -11,6 +11,7 @@
 <img src="images/dataset.png" width=700 height=60 /> <br>
 ## Implementation
 ### Model Selection
+在CNN模型的架構上，我選擇的是VGG16，如下圖所示:
 <img src="images/vgg16.png" width=800 height=300 /> <br>
 ### Optimizer Selection
 ### Data Augmentation
