@@ -1,4 +1,4 @@
-# CNN
+# Convolutional Neural Network
 ## Task Description: Image Classification
 * 此次資料集為網路上蒐集到的食物照片，共有11類
 ( Bread, Dairy product, Dessert, Egg, Fried food, Meat, Noodles/Pasta, Rice, Seafood, Soup, and Vegetable/Fruit )
