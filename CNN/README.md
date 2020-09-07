@@ -22,7 +22,7 @@
 * BatchNorm2d(): 加在每一層Convolution Layer裡，能夠達到加速訓練速度的效果
 * ReLU(): CNN常使用的activation function，加在每一層Convolution Layer裡，能夠克服梯度消失問題且節省計算量
 * MaxPool2d(): pooling size均為2x2，效果比使用average pooling來得好
-* Dropout(): 加在前兩層Fully-Connected Layer後，
+* Dropout(): 加在前兩層Fully-Connected Layer後，可以達到regularization的效果以避免overfitting
 ### Optimizer Selection
 在Optimizer的選擇上，我選擇使用Adam + SGDM，其中選擇Adam的優點在於收斂的速度較快，可以節省許多training花費的時間，但缺點是收斂的結果較差，因此我選擇在前200個epoch使用Adam，而後50個epoch使用收斂結果較好的SGDM，兩者結合後在testing data上得到的準確率會比單獨使用Adam來的高
 ### Data Augmentation
