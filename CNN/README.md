@@ -23,11 +23,9 @@
 * ReLU(): CNN常使用的activation function，加在每一層Conv Layer和FC Layer裡，能夠克服梯度消失問題且節省計算量
 * MaxPool2d(): pooling size均為2x2，效果比使用average pooling來得好
 * Dropout(): 加在前兩層FC Layer後，可以達到regularization的效果以避免overfitting
-<br>
 
 ### Optimizer Selection
 在Optimizer的選擇上，我選擇使用Adam + SGDM，其中選擇Adam的優點在於收斂的速度較快，可以節省許多training花費的時間，但缺點是收斂的結果較差，因此我選擇在前200個epoch使用Adam，而後50個epoch使用收斂結果較好的SGDM，兩者結合後在testing data上得到的準確率會比單獨使用Adam來的高
-<br>
 
 ### Data Augmentation
 在訓練模型的每個epoch前，對圖片做一些隨機的變動，來增加訓練資料的多樣性，以此減少overfitting的情形，此種技巧稱為data augmentation，主要可以解決資料量不足的情況並且提昇訓練的準確率，而我所使用的種類包括:
@@ -38,7 +36,6 @@
 * RandomCrop(): 隨機裁切圖片
 * RandomAffine(): 保持圖片中心不變的情況下，隨機對圖片進行仿射變換
 * ToTensor(): 將數值normalize到0~1之間
-<br>
 
 ### CNN v.s. DNN
 ---
