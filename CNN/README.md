@@ -21,10 +21,11 @@
 * Conv2d()
 * BatchNorm2d()
 * ReLU()
+* MaxPool2d()
+* Dropout()
 ### Optimizer Selection
 在Optimizer的選擇上，我選擇使用Adam + SGDM，其中選擇Adam的優點在於收斂的速度較快，可以節省許多training花費的時間，但缺點是收斂的結果較差，因此我選擇在前200個epoch使用Adam，而後50個epoch使用收斂結果較好的SGDM，兩者結合後在testing data上得到的準確率會比單獨使用Adam來的高
 ### Data Augmentation
-### Confusion Matrix
 ---
 ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
