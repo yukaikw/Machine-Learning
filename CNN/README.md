@@ -13,8 +13,8 @@
 ### Model Selection
 在CNN模型的架構上，我選擇的是VGG16，如下圖所示:
 <img src="images/vgg16.png" width=800 height=300 /> <br>
-其中包括13層Convolution Layer，5層MaxPooling，3層Fully-Connected Layer，而詳細的模型架構和參數量如下圖(torchsummary)所示:
-
+其中包括13層Convolution Layer，5層MaxPooling，3層Fully-Connected Layer，而會選擇vgg16的原因是深度較淺的CNN模型經過測試後表現較差，但是也並非深度越深效果越好，深度越深的模型在training時花費的時間越多，也可能會因為資料量不足而導致overfitting的情況更加嚴重，而詳細的模型架構和參數量如下圖(torchsummary)所示: <br>
+<img src="images/torchsummary.png" width=450 height=900 /> <br>
 * Conv2d()
 * BatchNorm2d()
 * ReLU()
