@@ -110,16 +110,13 @@ class Classifier(nn.Module):
             nn.MaxPool2d(2, 2, 0),       # [512, 4, 4]
         )
         self.fc = nn.Sequential(
-            nn.Linear(512*4*4, 4096),
+            nn.Linear(512*4*4, 1024),
             nn.Dropout(0.5),
             nn.ReLU(),
-            nn.Linear(4096, 4096),
+            nn.Linear(1024, 1024),
             nn.Dropout(0.5),
             nn.ReLU(),
-            nn.Linear(4096, 1000),
-            nn.Dropout(0.5),
-            nn.ReLU(),
-            nn.Linear(1000, 11)
+            nn.Linear(1024, 11)
         )
 
     def forward(self, x):
