@@ -35,7 +35,7 @@
 * RandomPerspective(): 隨機對圖片進行透視變換
 * RandomCrop(): 隨機裁切圖片
 * RandomAffine(): 保持圖片中心不變的情況下，隨機對圖片進行仿射變換
-* ToTensor(): 將數值normalize到0~1之間
+* ToTensor(): 將數值normalize到0 ~ 1之間
 
 ### CNN v.s. DNN
 經過測試後，在維持兩者模型參數量相近的情況下，DNN在testing set上的準確率僅有20 ~ 30%，反之，CNN則可以高達80 ~ 90%，因此發現DNN在圖片辨識上的表現不太優秀，即使使用較龐大的模型也無法改善，但是對於比較簡單的問題如MNIST等，DNN仍能夠有不錯的準確率，而CNN與DNN最大的差別在於，CNN的Conv Layer會抽取出圖片的特徵，其中前幾層負責較簡單的特徵，如線條或輪廓等，而越後面則負責越複雜的特徵，同時Pooling Layer能夠讓特徵在圖片中的不同區域都得到重視，以此提高模型對於圖片的辨識率
