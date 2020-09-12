@@ -13,6 +13,12 @@
 ## Download Dataset
 
 ## Implementation
+### Word Embedding
+### Preprocessing
+### Model
+### Ensemble
+### Semi-Supervised Learning
+### BOW + DNN v.s. RNN
 
 
 ---
