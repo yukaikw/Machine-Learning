@@ -31,6 +31,7 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 <br>
 在模型的選擇上，我使用的是LSTM，比起較為簡易的GRU，LSTM有著更好的準確率，而參數部份input_size = 250，hidden_size = 150, num_layers = 3, batch_first = True, dropout = 0.5, bidirectional = True，bidirectional LSTM在準確率上會比unidirectional LSTM稍微好一點，而訓練時設定為fix embedding，也就是word embedding不會和模型一起訓練，如果將兩者一起訓練會使得overfit的情況更加嚴重
 ### BOW + DNN v.s. RNN
+98.7% 26.3%
 ### Ensemble
 ### Semi-Supervised Learning
 
