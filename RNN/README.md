@@ -20,6 +20,8 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 <img src="images/BOW.png" width=720 height=360 /> <br>
 <br>
 <img src="images/prediction-based.png" width=720 height=510 /> <br>
+<br>
+由於1-of-N encoding和BOW這兩種方法都有明顯的缺點，因此我最終選擇prediction-based embedding中的skip-gram，其中skip-gram和CBOW都可以直接使用gensim這個套件來完成，不需要親自實作
 ### Preprocessing
 ### Model
 ### Ensemble
