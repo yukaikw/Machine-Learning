@@ -11,13 +11,13 @@
   * testing data             : 20萬
 * 希望利用training dataset訓練一個RNN model，來預測每個句子所帶有的情緒
 ## Download Dataset
-
+<img src="images/dataset.png" width=700 height=60 /> <br>
 ## Implementation
 ### Word Embedding
-Word embedding是一種將單字轉換為向量的方法，常見的word embedding方法有三類，大致上分為:
-#### 1-of-N Encoding 
-#### Bag-of-Words 
-#### Prediction-Based Embedding
+Word embedding是一種將單字轉換為向量的方法，常見的word embedding方法有三類，大致上分為1-of-N Encoding，Bag-of-Words，和Prediction-Based Embedding:
+<img src="images/1-of-N.png" width=1300 height=600 /> <br>
+<img src="images/BOW.png" width=1300 height=600 /> <br>
+<img src="images/prediction-based.png" width=1200 height=850 /> <br>
 ### Preprocessing
 ### Model
 ### Ensemble
