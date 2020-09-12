@@ -6,7 +6,7 @@
 <img src="images/data_0.png" width=1300 height=20 /> <br>
 0：負面 <br>
 * dataset分為training和testing，其中training dataset又分為labeled training data和unlabeled training data
-  * labeled training data   : 20萬
-  * unlabeled training data : 120萬
-  * testing data            : 20萬
+  * labeled training data    : 20萬
+  * unlabeled training data  : 120萬
+  * testing data             : 20萬
 * 希望利用training dataset訓練一個RNN model，來預測每個句子所帶有的情緒
