@@ -10,3 +10,12 @@
   * unlabeled training data  : 120萬
   * testing data             : 20萬
 * 希望利用training dataset訓練一個RNN model，來預測每個句子所帶有的情緒
+## Implementation
+
+
+---
+### Reference:
+投影片部份取自李宏毅教授的機器學習課程 (
+[RNN](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2016/Lecture/RNN%20(v2).pdf)
+[作業說明投影片](https://docs.google.com/presentation/d/1W5-D0hqchrkVgQxwNLBDlydamCHx5yetzmwbUiksBAA/edit#slide=id.g7cd4f194f5_2_151)
+[kaggle連結](https://www.kaggle.com/c/ml2020spring-hw4) )
