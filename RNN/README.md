@@ -33,7 +33,8 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 ### BOW + DNN v.s. RNN
 1. today is a good day, but it is hot <br>
 2. today is hot, but it is a good day <br>
-用以上兩個句子為例，在BOW + DNN模型上過softmax後的預測數值皆為70.9%，而在RNN上分別為26.3%和98.7%，由於BOW只會紀錄單字出現的次數，而不會去考慮順序，因此對兩者的預測分數相同，RNN則會考慮句子中的順序，並且利用forget gate來決定是否保留前面的單字，其中"good"為正面的單字，"hot"為較負面的單字，所以BOW會認為這兩個句子為中立偏正面，而LSTM可能因為看到"but"這個單字時選擇遺忘前面的部份，因此判斷第一句為負面第二句為正面，從結果上來觀察，RNN在判斷上有著較強的能力，而對於整個testing data的準確率上，也是RNN勝過BOW + RNN，所以在這次的task中使用RNN較為合適，BOW + DNN可能比較適合只需要判斷句子主題的task或者當資料量不足的情況
+
+用以上兩個句子為例，在BOW + DNN模型上過softmax後的預測數值皆為70.9%，而在RNN上分別為26.3%和98.7%，由於BOW只會紀錄單字出現的次數，而不會去考慮順序，因此對兩者的預測分數相同，RNN則會考慮句子中的順序，並且利用forget gate來決定是否保留前面的單字，其中"good"為正面的單字，"hot"為較負面的單字，所以BOW會認為這兩個句子為中立偏正面，而LSTM可能因為看到"but"這個單字時選擇遺忘前面的部份，因此判斷第一句為負面第二句為正面，從結果上來觀察，RNN在判斷上有著較強的能力，而對於整個testing data的準確率上，也是RNN勝過BOW + DNN，所以在這次的task中使用RNN較為合適，BOW + DNN可能比較適合只需要判斷句子主題或者當資料量不足的task
 ### Ensemble
 ### Semi-Supervised Learning
 
@@ -42,5 +43,7 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
 [RNN](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2016/Lecture/RNN%20(v2).pdf)
+[Word Embedding](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/word2vec%20(v2).pdf)
+[Semi-Supervised](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2016/Lecture/semi%20(v3).pdf)
 [作業說明投影片](https://docs.google.com/presentation/d/1W5-D0hqchrkVgQxwNLBDlydamCHx5yetzmwbUiksBAA/edit#slide=id.g7cd4f194f5_2_151)
 [kaggle連結](https://www.kaggle.com/c/ml2020spring-hw4) )
