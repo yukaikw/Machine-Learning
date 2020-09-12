@@ -14,9 +14,11 @@
 <img src="images/dataset.png" width=700 height=60 /> <br>
 ## Implementation
 ### Word Embedding
-Word embedding是一種將單字轉換為向量的方法，常見的word embedding方法有三類，大致上分為1-of-N Encoding，Bag-of-Words，和Prediction-Based Embedding:
+Word embedding是一種將單字轉換為向量的方法，常見的word embedding方法有三類，大致上分為1-of-N Encoding，Bag-of-Words，和Prediction-Based Embedding: <br>
 <img src="images/1-of-N.png" width=720 height=360 /> <br>
+<br>
 <img src="images/BOW.png" width=720 height=360 /> <br>
+<br>
 <img src="images/prediction-based.png" width=720 height=510 /> <br>
 ### Preprocessing
 ### Model
