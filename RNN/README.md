@@ -26,10 +26,10 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 * pad sequence: 將每個句子變成一樣的長度，經過測試後發現當長度為35時有最佳的結果，如果句子長度過短的話，可能會有沒將重要資訊讀入的情況
 * remove stopword: 移除資料中出現特別頻繁的詞，如"a", "the", "is", "are"，但是經過測試後發現反而會使準確率下降，因此最後沒有使用
 * remove number & symbol: 移除資料中出現的數字和符號，經過測試後也同樣發現會使準確率下降，因此最後沒有使用
-### Model
+### Model Selection
+### BOW + DNN v.s. RNN
 ### Ensemble
 ### Semi-Supervised Learning
-### BOW + DNN v.s. RNN
 
 
 ---
