@@ -21,12 +21,15 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 <br>
 <img src="images/prediction-based.png" width=720 height=510 /> <br>
 <br>
-由於1-of-N encoding和BOW這兩種方法都有明顯的缺點，因此我最終選擇prediction-based embedding中的skip-gram，其中skip-gram和CBOW都可以直接使用gensim這個套件來完成，不需要親自實作
+由於1-of-N encoding和BOW這兩種方法都有明顯的缺點，因此我最終選擇prediction-based embedding中的skip-gram，其中skip-gram和CBOW都可以直接使用gensim這個套件來完成，不需要親自手刻
 ### Preprocessing
 * pad sequence: 將每個句子變成一樣的長度，經過測試後發現當長度為35時有最佳的結果，如果句子長度過短的話，可能會有沒將重要資訊讀入的情況
 * remove stopword: 移除資料中出現特別頻繁的詞，如"a", "the", "is", "are"，但是經過測試後發現反而會使準確率下降，因此最後沒有使用
 * remove number & symbol: 移除資料中出現的數字和符號，經過測試後也同樣發現會使準確率下降，因此最後沒有使用
 ### Model Selection
+<img src="images/lstm.png" width=700 height=500 /> <br>
+<br>
+在模型的選擇上，我使用的是LSTM，比起較為簡易的GRU，LSTM有著更好的準確率，而參數部份input_size = 250，hidden_size = 150, num_layers = 3, batch_first = True, dropout = 0.5, bidirectional = True，bidirectional LSTM在準確率上會比unidirectional LSTM稍微好一點，而訓練時設定為fix embedding，也就是word embedding不會和模型一起訓練，如果將兩者一起訓練會使得overfit的情況更加嚴重
 ### BOW + DNN v.s. RNN
 ### Ensemble
 ### Semi-Supervised Learning
