@@ -31,9 +31,9 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 <br>
 在模型的選擇上，我使用的是LSTM，比起較為簡易的GRU，LSTM有著更好的準確率，而參數部份input_size = 250，hidden_size = 150, num_layers = 3, batch_first = True, dropout = 0.5, bidirectional = True，bidirectional LSTM在準確率上會比unidirectional LSTM稍微好一點，而訓練時設定為fix embedding，也就是word embedding不會和模型一起訓練，如果將兩者一起訓練會使得overfit的情況更加嚴重
 ### BOW + DNN v.s. RNN
-1. today is a good day, but it is hot
-2. today is hot, but it is a good day
-用以上兩個句子為例，在BOW + DNN模型上過softmax後的預測數值皆為70.9%，而在RNN上分別為26.3%和98.7%，由於BOW只會紀錄單字出現的次數
+1. today is a good day, but it is hot <br>
+2. today is hot, but it is a good day <br>
+用以上兩個句子為例，在BOW + DNN模型上過softmax後的預測數值皆為70.9%，而在RNN上分別為26.3%和98.7%，由於BOW只會紀錄單字出現的次數，而不會去考慮順序，因此對兩者的預測分數相同，RNN則會考慮句子中的順序，並且利用forget gate來決定是否保留前面的單字，其中"good"為正面的單字，"hot"為較負面的單字，所以BOW會認為這兩個句子為中立偏正面，而LSTM可能因為看到"but"這個單字時選擇遺忘前面的部份，因此判斷第一句為負面第二句為正面，從結果上來觀察，RNN在判斷上有著較強的能力，而對於整個testing data的準確率上，也是RNN勝過BOW + RNN，所以在這次的task中使用RNN較為合適，BOW + DNN可能比較適合只需要判斷句子主題的task或者當資料量不足的情況
 ### Ensemble
 ### Semi-Supervised Learning
 
