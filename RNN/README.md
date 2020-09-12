@@ -17,7 +17,7 @@
 Word embedding是一種將單字轉換為向量的方法，常見的word embedding方法有三類，大致上分為:
 #### 1-of-N Encoding 
 #### Bag-of-Words 
-#### Predicted Based Embedding
+#### Prediction-Based Embedding
 ### Preprocessing
 ### Model
 ### Ensemble
