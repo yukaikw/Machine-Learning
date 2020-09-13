@@ -38,8 +38,8 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 ### Ensemble
 透過建立多個模型來解決單一預測問題，其原理是利用dataset訓練出多個分類器，各自獨立學習和做出預測，最後將這些預測結果結合成單一預測，因此會優於單一個分類器做出的預測，也就是三個臭皮匠勝過一個諸葛亮的概念，其中結合預測結果的方法又主要分為hard-voting ensemble和soft-voting ensemble:
 * Hard-Voting Ensemble: 根據少數服從多數來決定預測結果
-* Soft-Voting Ensemble: 將多個模型預測概率的數值取平均或加權作為預測結果的依據，分為average ensemble和weighted ensemble
-<br>
+* Soft-Voting Ensemble: 將多個模型預測概率的數值取平均或加權作為預測結果的依據，因此分為average ensemble和weighted ensemble
+
 舉例來說:
 
 Model | label = 1 | label = 0
