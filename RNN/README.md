@@ -52,10 +52,10 @@ C     |   30%     |   70%
 
 在這次的task中，我選擇使用的是soft-voting ensemble，比起hard-voting ensemble有著更好的準確率，而我總共訓練了8個模型做ensemble，其中有4個bidirectional LSTM和4個unidirectional LSTM，比起單一個LSTM模型，在testing data上的準確率可以從82.6%提升到83.2%
 ### Semi-Supervised Learning
-把訓練好的模型對unlabeled data做預測，並將這些預測後的值轉成該筆unlabeled data的label，並加入這些新的data做訓練，以此增加訓練資料的數量，其中標記label的方法又分為hard pseudo labeling和soft pseudo labeling:
-* Hard Pseudo Labeling:
-* Soft Pseudo Labeling:
-
+把訓練好的模型對unlabeled data做預測，並將這些預測後的值轉成該筆unlabeled data的label，並加入這些新的data做訓練，以此增加labeled data的數量，其中標記label的方法又分為hard pseudo labeling和soft pseudo labeling:
+* Hard Pseudo Labeling: 當預測的數值大於設定的boundary則將label標記為1，反之，當預測的數值小於設定的boundary則將label標記為0
+* Soft Pseudo Labeling: 將預測的數值直接當作data的label
+在這次的task中，
 ---
 ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
