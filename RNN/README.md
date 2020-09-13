@@ -60,7 +60,7 @@ C     |   30%     |   70%
 
 Ensemble -> Semi-Supervised Learning(Hard Pseudo Labeling) -> Ensemble 
 
-也就是先用8個模型對120萬筆的unlabeled data做ensemble，將滿足條件的data標上label並加進訓練資料中，再訓練8個模型，一樣是4個bidirectional LSTM和4個unidirectional LSTM，最後再利用總共16個模型對testing data做ensemble，準確率最終可以提升到83.4%
+也就是先用8個模型對120萬筆的unlabeled data做ensemble，將滿足條件的data標上label並加進訓練資料中，訓練資料從20萬增加為72萬，再訓練8個模型，一樣是4個bidirectional LSTM和4個unidirectional LSTM，最後再利用總共16個模型對testing data做ensemble，準確率最終可以提升到83.4%
 
 ---
 ### Reference:
