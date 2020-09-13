@@ -49,6 +49,8 @@ B     |   40%     |   60%
 C     |   30%     |   70%
 
 如果是使用hard-voting的話，最終預測結果為label = 0，因為B和C認為是label = 0的機率較高，而如果是使用soft-voting的話，最終預測結果為label = 1，因為將三者的預測機率做平均後，認為是label = 1的機率較高
+
+在這次的task中，我選擇使用的是soft-voting ensemble，比起hard-voting ensemble有著更好的準確率，而我總共訓練了8個模型做ensemble，其中有4個bidirectional LSTM和4個unidirectional LSTM，比起單一個LSTM模型，在testing data上的準確率可以從82.6%提升到83.2%
 ### Semi-Supervised Learning
 
 
