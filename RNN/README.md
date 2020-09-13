@@ -36,6 +36,19 @@ Word embedding是一種將單字轉換為向量的方法，常見的word embeddi
 
 用以上兩個句子為例，在BOW + DNN模型上過softmax後的預測數值皆為70.9%，而在RNN上分別為26.3%和98.7%，由於BOW只會紀錄單字出現的次數，而不會去考慮順序，因此對兩者的預測分數相同，RNN則會考慮句子中的順序，並且利用forget gate來決定是否保留前面的單字，其中"good"為正面的單字，"hot"為較負面的單字，所以BOW會認為這兩個句子為中立偏正面，而LSTM可能因為看到"but"這個單字時選擇遺忘前面的部份，因此判斷第一句為負面第二句為正面，從結果上來觀察，RNN在判斷上有著較強的能力，而對於整個testing data的準確率上，也是RNN勝過BOW + DNN，所以在這次的task中使用RNN較為合適，BOW + DNN可能比較適合只需要判斷句子主題或者當資料量不足的task
 ### Ensemble
+透過建立多個模型來解決單一預測問題，其原理是利用dataset訓練出多個分類器，各自獨立學習和做出預測，最後將這些預測結果結合成單一預測，因此會優於單一個分類器做出的預測，也就是三個臭皮匠勝過一個諸葛亮的概念，其中結合預測結果的方法又主要分為hard-voting ensemble和soft-voting ensemble:
+* Hard-Voting Ensemble: 根據少數服從多數來決定預測結果
+* Soft-Voting Ensemble: 將多個模型預測概率的數值取平均或加權作為預測結果的依據，分為average ensemble和weighted ensemble
+<br>
+舉例來說:
+
+Model | label = 1 | label = 0
+------|-----------|-----------
+A     |   90%     |   10%
+B     |   40%     |   60%
+C     |   30%     |   70%
+
+
 ### Semi-Supervised Learning
 
 
