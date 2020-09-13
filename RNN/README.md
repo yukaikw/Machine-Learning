@@ -56,9 +56,11 @@ C     |   30%     |   70%
 * Hard Pseudo Labeling: 當預測的數值大於設定的boundary則將label標記為1，反之，當預測的數值小於設定的boundary則將label標記為0
 * Soft Pseudo Labeling: 將預測的數值直接當作data的label
 
-在這次的task中，我選擇使用的是hard pseudo labeling，而我最終實作的方法為:
+在這次的task中，我選擇使用的是hard pseudo labeling，並且設定boundary為 <= 0.1和 >= 0.9，而我最終實作的方法為:
 
 Ensemble -> Semi-Supervised Learning(Hard Pseudo Labeling) -> Ensemble 
+
+也就是先用8個模型對120萬筆的unlabeled data做ensemble，將滿足條件的data標上label並加進訓練資料中，再訓練8個模型，一樣是4個bidirectional LSTM和4個unidirectional LSTM，最後再利用總共16個模型對testing data做ensemble，準確率最終可以提升到83.4%
 
 ---
 ### Reference:
