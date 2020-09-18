@@ -1,6 +1,9 @@
 # Explainable AI
 ## Task Description
-
+* Saliency Map
+* Filter Visualization
+* Lime
+* Confusion Matrix
 ## Implementation
 ---
 ### Reference:
