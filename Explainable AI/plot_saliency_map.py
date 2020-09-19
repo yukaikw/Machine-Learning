@@ -95,7 +95,7 @@ def compute_saliency_maps(x, y, model):
   return saliencies
 
   # 指定想要一起 visualize 的圖片 indices
-img_indices = [83, 4218, 4707, 8598]
+img_indices = [83, 2070, 3000, 4218, 4707, 6000]
 images, labels = train_set.getbatch(img_indices)
 saliencies = compute_saliency_maps(images, labels, model)
 
@@ -113,4 +113,23 @@ for row, target in enumerate([images, saliencies]):
     # - 第 1 個 dimension 為原本 img 的第 2 個 dimension，也就是 width
     # - 第 2 個 dimension 為原本 img 的第 0 個 dimension，也就是 channels
 
-plt.savefig(os.path.join(args.output_dir, 'saliency'))
+plt.savefig(os.path.join(args.output_dir, 'saliency_1'))
+
+img_indices = [6800, 7500, 8150, 8598, 1300]
+images, labels = train_set.getbatch(img_indices)
+saliencies = compute_saliency_maps(images, labels, model)
+# 使用 matplotlib 畫出來
+fig, axs = plt.subplots(2, len(img_indices), figsize=(15, 8))
+for row, target in enumerate([images, saliencies]):
+  for column, img in enumerate(target):
+    axs[row][column].imshow(img.permute(1, 2, 0).numpy())
+    # 小知識：permute 是什麼，為什麼這邊要用?
+    # 在 pytorch 的世界，image tensor 各 dimension 的意義通常為 (channels, height, width)
+    # 但在 matplolib 的世界，想要把一個 tensor 畫出來，形狀必須為 (height, width, channels)
+    # 因此 permute 是一個 pytorch 很方便的工具來做 dimension 間的轉換
+    # 這邊 img.permute(1, 2, 0)，代表轉換後的 tensor，其
+    # - 第 0 個 dimension 為原本 img 的第 1 個 dimension，也就是 height
+    # - 第 1 個 dimension 為原本 img 的第 2 個 dimension，也就是 width
+    # - 第 2 個 dimension 為原本 img 的第 0 個 dimension，也就是 channels
+
+plt.savefig(os.path.join(args.output_dir, 'saliency_2'))
