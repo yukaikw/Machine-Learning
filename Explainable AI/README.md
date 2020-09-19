@@ -1,9 +1,11 @@
 # Explainable AI
 ## Task Description
-* Saliency Map
-* Filter Visualization
-* Lime
-* Confusion Matrix
+* 透過更加透明化的資訊來了解模型判斷的依據和背後原因，以此幫助建模者除錯和改善模型
+  * Saliency Map
+  * Filter Visualization
+  * Lime
+  * Confusion Matrix
+* 利用在CNN的task中使用的dataset和訓練完的模型來實作各種explainable AI的方法
 ## Download Dataset
 <img src="output/dataset.png" width=700 height=60 /> <br>
 ## Implementation
