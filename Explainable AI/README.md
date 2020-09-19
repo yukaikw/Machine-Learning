@@ -10,7 +10,7 @@
 <img src="output/dataset.png" width=700 height=60 /> <br>
 ## Implementation
 ### Saliency Map
-<img src="output/saliency_1.png" width=1250 height=500 /> <br>
+<img src="output/saliency_1.png" width=1200 height=500 /> <br>
 <img src="output/saliency_2.png" width=880 height=480 /> <br>
 ### Filter Visualization
 ### Lime
