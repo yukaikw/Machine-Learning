@@ -5,7 +5,7 @@
   * Filter Visualization
   * Lime
   * Confusion Matrix
-* 利用在CNN的task中使用的dataset和訓練完的模型來實作各種explainable AI的方法
+* 利用在CNN的task中使用的dataset和訓練完的模型並實作各種explainable AI的方法
 ## Download Dataset
 <img src="output/dataset.png" width=700 height=60 /> <br>
 ## Implementation
