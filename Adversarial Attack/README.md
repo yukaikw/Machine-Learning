@@ -8,6 +8,10 @@
   * ResNet-101
   * DenseNet-121
   * DenseNet-169
+* Dataset:
+  * 200張224 x 224 RGB影像
+  * categories.csv:總共1000 categories
+  * labels.csv:每張影像的info
  ## Download Dataset
  [Download link](https://drive.google.com/open?id=14CqX3OfY9aUbhGp4OpdSHLvq2321fUB7)
  ## Implementation
