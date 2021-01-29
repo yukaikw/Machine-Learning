@@ -17,6 +17,7 @@
 ### Lime
 <img src="output/lime.png" width=960 height=500 /> <br>
 ### Confusion Matrix
+<img src="output/confusionmatrix.png" width=800 height=600 /> <br>
 ---
 ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
