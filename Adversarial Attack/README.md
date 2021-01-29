@@ -9,6 +9,7 @@
   * DenseNet-121
   * DenseNet-169
  ## Download Dataset
+ [Download link](https://drive.google.com/open?id=14CqX3OfY9aUbhGp4OpdSHLvq2321fUB7)
  ## Implementation
  ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
