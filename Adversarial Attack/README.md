@@ -1,6 +1,6 @@
 # Adversarial Attack
 ## Task Description
-* 透過不同的adversarial attack方法來對圖片進行修改，嘗試不同的proxy model來對black box模型進行攻擊，希望達到最高的攻擊成功率並極小化L-inf
+* Adversarial attack是一種造成深度學習模型判斷錯誤的攻擊手法，而除了實作不同的adversarial attack方法外，也需要嘗試不同的proxy model來black box模型進行攻擊，希望達到最高的攻擊成功率並極小化L-inf
 * black box模型可能種類：
   * VGG-16
   * VGG-19
