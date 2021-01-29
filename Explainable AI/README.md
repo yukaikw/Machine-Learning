@@ -15,7 +15,7 @@
 ### Filter Visualization
 <img src="output/filter.png" width=840 height=1200 /> <br>
 ### Lime
-<img src="output/lime.png" width=1500 height=800 /> <br>
+<img src="output/lime.png" width=960 height=500 /> <br>
 ### Confusion Matrix
 ---
 ### Reference:
