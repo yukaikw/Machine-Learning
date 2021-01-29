@@ -4,9 +4,6 @@
 * [CNN](https://github.com/kevin-0211/Machine-Learning/tree/master/CNN)
 * [RNN](https://github.com/kevin-0211/Machine-Learning/tree/master/RNN)
 * [Explainable AI](https://github.com/kevin-0211/Machine-Learning/tree/master/Explainable%20AI)
-
------ 以下尚未完成 -----
-
 * [Adversarial Attack]()
 * [Network Compression]()
 * [Unsupervised Learning]()
