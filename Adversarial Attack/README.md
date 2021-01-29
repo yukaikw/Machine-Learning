@@ -10,11 +10,12 @@
   * DenseNet-169
 * Dataset:
   * 200張224 x 224 RGB影像
-  * categories.csv:總共1000 categories
-  * labels.csv:每張影像的info
+  * categories.csv: 總共1000 categories
+  * labels.csv: 每張影像的info
  ## Download Dataset
  [Download link](https://drive.google.com/open?id=14CqX3OfY9aUbhGp4OpdSHLvq2321fUB7)
  ## Implementation
+ 
  ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
 [Adversarial Attack](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/Attack%20(v8).pdf)
