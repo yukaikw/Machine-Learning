@@ -8,4 +8,5 @@
 * [Network Compression]()
 * [Unsupervised Learning]()
 * [Anomaly Detection]()
+* [GAN]()
 * [Transfer Learning]()
