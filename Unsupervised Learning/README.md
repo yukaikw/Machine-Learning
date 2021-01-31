@@ -14,6 +14,11 @@
 
 ## Download Dataset
 ## Implementation
+如果直接在原本的 image 上做 cluster，結果會很差（有很多冗餘資訊）<br>
+→ 需要更好的方式來表示原本的 image <br>
+<br>
+為了找出這個更好的方式，可以先將原始 image 做 dimension reduction，用比較少的維度來描述一張 image <br>
+e.g., autoencoder, PCA, SVD, t-SNE <br>
 
 ---
 ### Reference:
