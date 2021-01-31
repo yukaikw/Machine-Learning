@@ -10,7 +10,7 @@
 
 ## Implementation
 ### Knowledge Distillation
-在 train 小 model 的時候，加入大 model 的一些資訊(例如預測的機率分布)來幫助小 model 學習
+在 train 小 model 的時候，加入大 model 的一些資訊(例如預測的機率分布)來幫助小model學習 <br>
 <img src="output/knowledge.png" width=560 height=360 /> <br>
 ### Network Pruning
 將已經 train 好的 model 做剪枝使其變小
@@ -19,8 +19,8 @@
 <img src="output/weight.png" width=600 height=400 /> <br>
 ### Design Architecture
 Depthwise & Pointwise Convolution Layer (MobileNet 提出)
-* 原始的 Conv 你可以想像成它就是一個 Dense/Linear Layer，但是每一條線/每一個 weight 都是一個 filter，而原本的乘法會變成卷積運算。(input*weight -> input * filter)
-* 而 Depthwise 是讓每一個 Channel 都先過一個各自的 filter，再對每個 pixel 過shared-weight的Dense/Linear 。(Pointwise其實就是1x1 conv)。
+* 原始的 Conv 你可以想像成它就是一個 Dense/Linear Layer，但是每一條線/每一個 weight 都是一個 filter，而原本的乘法會變成卷積運算 (input*weight -> input * filter)
+* 而 Depthwise 是讓每一個 Channel 都先過一個各自的 filter，再對每個 pixel 過shared-weight的Dense/Linear (Pointwise其實就是1x1 conv) <br>
 <img src="output/design.png" width=480 height=280 /> <br>
 
 ---
