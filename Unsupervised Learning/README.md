@@ -1,5 +1,17 @@
-# Adversarial Attack
+# Unsupervised Learning
 ## Task Description
+* 分辨給定的兩張 images 是否為風景 (植物也算風景 e.g., 一片葉子)
+* Dataset:
+  * trainX.npy
+    * 裡面總共有 8500 張 RGB 圖片，大小都是 32 * 32 * 3
+    * shape 為 (8500, 32, 32, 3)
+  * valX.npy
+    * 裡面總共有 500 張 RGB 圖片，大小都是 32 * 32 * 3
+    * shape 為 (500, 32, 32, 3)
+  * valY.npy
+    * 對應 valX.npy 的 label
+    * shape為 (500,)
+
 ## Download Dataset
 ## Implementation
 
