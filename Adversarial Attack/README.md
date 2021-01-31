@@ -23,6 +23,8 @@
 ### Black Box Model
 經過測試後發現使用DenseNet-121的攻擊成功率最高，因此可以推測出black box model為DenseNet-121
 <img src="output/success_rate.png" width=700 height=450 /> <br>
+
+---
 ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
 [Adversarial Attack](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/Attack%20(v8).pdf)
