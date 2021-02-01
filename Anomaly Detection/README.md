@@ -4,10 +4,17 @@
 * Dataset:
   * Training: 某個 image dataset 的 training data (大小32*32*3) 中的屬於某些 label的data（40000 筆）
   * Testing: 此 dataset 的所有 testing data（10000 筆）
-
+<img src="images/task.png" width=730 height=270 /> <br>
 ## Download Dataset
 
 ## Implementation
+<img src="images/method1.png" width=650 height=380 /> <br>
+<img src="images/method2.png" width=745 height=310 /> <br>
+<img src="images/method3.png" width=750 height=220 /> <br>
+### Autoencoder 架構
+* FCN (fully connected neural network)
+* CNN (convolutional neural network)
+* VAE (variational autoencoder)
 
 ---
 ### Reference:
