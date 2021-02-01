@@ -6,7 +6,7 @@
   * Testing: 此 dataset 的所有 testing data（10000 筆）
 <img src="images/task.png" width=730 height=270 /> <br>
 ## Download Dataset
-
+<img src="images/dataset.png" width=600 height=150 /> <br>
 ## Implementation
 <img src="images/method1.png" width=650 height=380 /> <br>
 <img src="images/method2.png" width=745 height=310 /> <br>
@@ -14,7 +14,8 @@
 ### Autoencoder 架構
 * FCN (fully connected neural network)
 * CNN (convolutional neural network)
-* VAE (variational autoencoder)
+* VAE (variational autoencoder) <br>
+<img src="images/vae.png" width=700 height=325 /> <br>
 
 ---
 ### Reference:
