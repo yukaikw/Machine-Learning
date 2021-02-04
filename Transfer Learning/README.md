@@ -5,11 +5,13 @@
 * Dataset:
   * Training : 5000 張真實圖片 + label, 32 x 32 RGB
   * Testing : 100000 張手繪圖片，28 x 28 Gray Scale
-  * Label: 總共需要預測 10 個 class，如下圖所示
+  * Label: 總共需要預測 10 個 class，如下圖所示 <br>
+<img src="output/knowledge.png" width=560 height=360 /> <br>
 
 ## Download Dataset
 [Download Link](https://drive.google.com/file/d/12-07DSquGdzN3JBHBChN4nMo3i8BqTiL/view)
 ## Implementation
+<img src="output/overview.png" width=770 height=550 /> <br>
 
 ---
 ### Reference:
