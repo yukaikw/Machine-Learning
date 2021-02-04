@@ -11,8 +11,14 @@
   <img src="images/gan_generator.png" width=500 height=460 /> <br>
   * Discriminator: <br>
   <img src="images/gan_discriminator.png" width=500 height=450 /> <br>
-* WGAN-GP
+* WGAN-GP <br>
 <img src="images/wgan-gp.png" width=700 height=360 /> <br>
+用 LeakyReLU() 取代 ReLU()，並且用 gradient penalty 取代 weight clipping，可以提高訓練穩定度，同時避免 Mode Collapse 的發生
+ * Generator: <br>
+ <img src="images/wgan_generator.png" width=480 height=440 /> <br>
+ * Discriminator: <br>
+ <img src="images/wgan_discriminator.png" width=500 height=450 /> <br>
+ 
 ---
 ### Reference:
 投影片部份取自李宏毅教授的機器學習課程 (
