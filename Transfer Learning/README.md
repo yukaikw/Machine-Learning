@@ -11,7 +11,17 @@
 ## Download Dataset
 [Download Link](https://drive.google.com/file/d/12-07DSquGdzN3JBHBChN4nMo3i8BqTiL/view)
 ## Implementation
-<img src="images/overview.png" width=770 height=550 /> <br>
+<img src="images/overview.png" width=620 height=440 /> <br>
+<br>
+<br>
+<img src="images/DaNN-1.png" width=650 height=400 /> <br>
+<img src="images/DaNN-2.png" width=640 height=340 /> <br>
+<br>
+<br>
+<img src="images/DaNN-3.png" width=600 height=270 /> <br>
+<img src="images/DaNN-4.png" width=600 height=280 /> <br>
+<img src="images/DaNN-5.png" width=620 height=270 /> <br>
+
 
 ---
 ### Reference:
