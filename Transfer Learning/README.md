@@ -5,11 +5,23 @@
 * Dataset:
   * Training : 5000 張真實圖片 + label, 32 x 32 RGB
   * Testing : 100000 張手繪圖片，28 x 28 Gray Scale
-  * Label: 總共需要預測 10 個 class，如下圖所示
+  * Label: 總共需要預測 10 個 class，如下圖所示 <br>
+<img src="images/dataset.png" width=800 height=180 /> <br>
 
 ## Download Dataset
 [Download Link](https://drive.google.com/file/d/12-07DSquGdzN3JBHBChN4nMo3i8BqTiL/view)
 ## Implementation
+<img src="images/overview.png" width=620 height=440 /> <br>
+<br>
+<br>
+<img src="images/DaNN-1.png" width=650 height=400 /> <br>
+<img src="images/DaNN-2.png" width=640 height=340 /> <br>
+<br>
+<br>
+<img src="images/DaNN-3.png" width=600 height=270 /> <br>
+<img src="images/DaNN-4.png" width=600 height=280 /> <br>
+<img src="images/DaNN-5.png" width=620 height=270 /> <br>
+
 
 ---
 ### Reference:
